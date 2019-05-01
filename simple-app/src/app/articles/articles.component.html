@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let art of this.allArticles">
+    <app-article [article]="art" (deletedArticle)="delArticle($event)" ></app-article>
+  </li>
+</ul>
