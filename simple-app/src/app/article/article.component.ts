@@ -8,6 +8,8 @@
 import {Component, Input, OnInit, Output} from '@angular/core';
 import {Article} from '../DB/Article';
 import {EventEmitter} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+import {ArticleService} from "../article.service";
 
 @Component({
   selector: 'app-article',
@@ -19,10 +21,13 @@ export class ArticleComponent implements OnInit {
   article: Article;
   @Output()
   deletedArticle: EventEmitter<Article> = new EventEmitter();
-  constructor() {}
+  constructor(private route: ActivatedRoute, private articleService: ArticleService) {}
 
   public getTitle(): string {
     return this.article.title;
+  }
+  public getId(): number {
+    return this.article.id;
   }
 
   public getContent(): string {
@@ -37,6 +42,11 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.route.params.subscribe( params => {
+      if (params && params['id']) {
+        this.articleService.getArticle(params['id']).subscribe(article => this.article = article);
+      }
+    });
   }
 
 }

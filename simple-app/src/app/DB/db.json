@@ -1,23 +1,28 @@
 {
-  "articles" : [{
-    "id" :0,
-    "title": "Le Rouleau de Jade avis et concours !! Vous allez adorer",
-    "content": " Le rouleau de JADE est une invention très pratique car se compose de deux parties, une large et une autre plus petite, pour traiter efficacement toutes les zones du visage. \n\n",
-    "author": "Atom"
-  }, {
-    "id":1,
-    "title": "Article se déroulant en direct 1er-Mai en direct : à Montparnasse, les manifestants se rassemblent dans le calme ",
-    "content": "En ce jour chômé de la Fête des travailleurs, de nombreux défilés sont prévus dans toute la France. A Paris, les cortèges partiront de place d’Italie, Montparnasse ou Odéon. Un important dispositif policier est prévu sur les parcours.",
-    "author": "Le monde"
-  }, {
-    "id":2,
-    "title": "Angular service",
-    "content": "I read something about angular service, i will try it soon",
-    "author": "Orangefire"
-  }, {
-    "id":3,
-    "title": "Stop procrastinating",
-    "content": "Often we get great idea but it stays at this stage because it hasn't been implemented right away. What we have to know is that some good ideas come only once. Then because we postpone their realization we simply waste them. We all agree, that's a damn shame!",
-    "author": "Sessi BOTON"
-  }]
+  "articles": [
+    {
+      "id": 0,
+      "title": "Le Rouleau de Jade avis et concours !! Vous allez adorer",
+      "content": " Le rouleau de JADE est une invention très pratique car se compose de deux parties, une large et une autre plus petite, pour traiter efficacement toutes les zones du visage. \n\n",
+      "author": "Atom"
+    },
+    {
+      "id": 1,
+      "title": "Article se déroulant en direct 1er-Mai en direct : à Montparnasse, les manifestants se rassemblent dans le calme ",
+      "content": "En ce jour chômé de la Fête des travailleurs, de nombreux défilés sont prévus dans toute la France. A Paris, les cortèges partiront de place d’Italie, Montparnasse ou Odéon. Un important dispositif policier est prévu sur les parcours.",
+      "author": "Le monde"
+    },
+    {
+      "id": 2,
+      "title": "Angular service",
+      "content": "I read something about angular service, i will try it soon",
+      "author": "Orangefire"
+    },
+    {
+      "id": 3,
+      "title": "Stop procrastinating",
+      "content": "Often we get great idea but it stays at this stage because it hasn't been implemented right away. What we have to know is that some good ideas come only once. Then because we postpone their realization we simply waste them. We all agree, that's a damn shame!",
+      "author": "Sessi BOTON"
+    }
+  ]
 }
