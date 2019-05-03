@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { ArticlesComponent } from './articles/articles.component';
 import {ArticleService} from './article.service';
 import { ArticleCreationComponent } from './article-creation/article-creation.component';
+import { FilterPipe }from './filter.pipe';
 
 
 const appRoutes: Routes = [
@@ -23,7 +25,8 @@ const appRoutes: Routes = [
     AppComponent,
     ArticleComponent,
     ArticlesComponent,
-    ArticleCreationComponent
+    ArticleCreationComponent,
+    FilterPipe
   ],
   imports: [
     RouterModule.forRoot(
@@ -32,7 +35,8 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [ArticleService],
   bootstrap: [AppComponent]

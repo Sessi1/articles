@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {$} from "protractor";
 
 @Component({
   selector: 'app-root',

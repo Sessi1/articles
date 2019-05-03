@@ -1,5 +1,7 @@
+Search: <input [(ngModel)]="searchText" class="form_control" placeholder="Search articles by title" type="text"/>
+<br/>
 <ul>
-  <li *ngFor="let art of this.allArticles">
+  <li *ngFor="let art of this.allArticles | Titlefilter:searchText">
     <app-article [article]="art" (deletedArticle)="delArticle($event)" ></app-article>
   </li>
 </ul>

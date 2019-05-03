@@ -1,4 +1,4 @@
-import {Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Article} from '../DB/Article';
 import {ArticleService} from '../article.service';
 import {Observable} from 'rxjs/Observable';
@@ -10,6 +10,7 @@ import {Observable} from 'rxjs/Observable';
 })
 export class ArticlesComponent implements OnInit {
   allArticles: Article[];
+  searchText:string;
   constructor(private articleService: ArticleService) {
   }
   delArticle(art: Article) {
@@ -18,6 +19,7 @@ export class ArticlesComponent implements OnInit {
     });
     console.log('One article was deleted');
   }
+
   ngOnInit() {
     // this.allArticles = this.articleService.getArticles();
     this.articleService.getArticles().subscribe(art => {
