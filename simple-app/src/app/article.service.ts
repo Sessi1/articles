@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Article} from './DB/Article';
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import {OtherArticle} from './DB/OtherArticle';
 
 @Injectable()

@@ -1,4 +1,4 @@
-Search: <input [(ngModel)]="searchText" class="form_control" placeholder="Search articles by title" type="text"/>
+Search: <input [(ngModel)]="searchText" class="form_control" placeholder="Search articles" type="text"/>
 <br/>
 <ul>
   <li *ngFor="let art of this.allArticles | Titlefilter:searchText">
